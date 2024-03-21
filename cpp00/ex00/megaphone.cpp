@@ -15,7 +15,7 @@ int main(int ac, char **av)
 			if (islower(av[i][j]))
 				std::cout << (char)toupper(av[i][j]);
 			else
-				std::cout << av[1][j];
+				std::cout << av[i][j];
 		}
 		if (i < ac - 1)
 			std::cout << " ";
