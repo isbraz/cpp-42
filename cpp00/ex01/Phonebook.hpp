@@ -4,6 +4,8 @@
 # include <iostream>
 # include <string>
 # include <fstream>
+# include <iomanip>
+# include <cstdlib>
 # include "Contact.hpp"
 
 class PhoneBook {

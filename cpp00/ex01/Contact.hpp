@@ -24,6 +24,7 @@ class Contact {
 			Contact(void); 
 			std::string getInfo(ContactValues type);
 			void setContact(ContactValues type);
+			void show_info(void);
 };
 
 #endif
