@@ -6,7 +6,7 @@ CXX = c++
 
 SRCS = Phonebook.cpp Contact.cpp main.cpp
 
-CXXFLAGS = -std=c++98 -lreadline -g #-Wall -Wextra -Werror
+CXXFLAGS = -std=c++98 -g -Wall -Wextra -Werror
 
 NAME = phonebook
 
