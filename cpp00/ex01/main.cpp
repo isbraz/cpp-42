@@ -105,7 +105,7 @@ int	main(void)
 			std::cin.ignore(1, '\n');
 			system("clear");
 		}
-		if (input == "SEARCH")
+		if (input == "SEARCH" && i > 0)
 		{
 			ft_search(i, &list);	
 			std::cout << "\nPress enter to continue!" << std::endl; 
