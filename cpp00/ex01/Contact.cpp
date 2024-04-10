@@ -41,6 +41,15 @@ void Contact::setContact(ContactValues type)
 	}
 }
 
+void Contact::show_info(void)
+{
+	std::cout << "First name: " << this->first_name << std::endl;
+	std::cout << "Last name: " << this->last_name << std::endl;
+	std::cout << "Nickname: " << this->nickname << std::endl;
+	std::cout << "Phone number: " << this->phone_number << std::endl;
+	std::cout << "Darkest secret: " << this->dark_secret << std::endl;
+}
+
 std::string Contact::getInfo(ContactValues type)
 {
 	switch (type)
