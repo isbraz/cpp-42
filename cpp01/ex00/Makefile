@@ -2,11 +2,11 @@ GREEN := \033[32m
 RED := \033[31m
 END := \033[0m
 
-SRCS = main.cpp Zombie.cpp
+SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
 CXXFLAGS = -std=c++98 -g -Wall -Wextra -Werror
 
-NAME = megaphone
+NAME = zombie
 
 all: $(NAME)
 
