@@ -4,11 +4,11 @@ END := \033[0m
 
 CXX = c++
 
-SRCS = Phonebook.cpp Contact.cpp main.cpp
+SRCS = main.cpp
 
 CXXFLAGS = -std=c++98 -g -Wall -Wextra -Werror
 
-NAME = phonebook
+NAME = ./replace
 
 all: $(NAME)
 
