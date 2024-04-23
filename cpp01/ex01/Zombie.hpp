@@ -4,12 +4,14 @@
 # include <iostream>
 # include <string>
 
+#define RED "\033[41m"
+
 class Zombie{
 	private:
 		std::string name;
 	public:
 		Zombie();
-		void set_name(std::string name);
+		void setName(std::string name);
 		void announce(void);
 		~Zombie();
 };
