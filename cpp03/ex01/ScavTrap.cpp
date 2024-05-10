@@ -15,6 +15,20 @@ ScavTrap::ScavTrap(std::string name){
 	std::cout << "ScavTrap constructor called" << std::endl;
 }
 
+ScavTrap::ScavTrap(const ScavTrap& copyConstructor){
+	this->name = copyConstructor.name;
+	this->hitPoints = copyConstructor.hitPoints;
+	this->energyPoints = copyConstructor.energyPoints;
+	this->attackDamage = copyConstructor.attackDamage;
+}
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& copyAssignment){
+	this->name = copyAssignment.name;
+	this->hitPoints = copyAssignment.hitPoints;
+	this->energyPoints = copyAssignment.energyPoints;
+	this->attackDamage = copyAssignment.attackDamage;
+}
+
 void ScavTrap::attack(const std::string& target){
 	if (this->energyPoints > 0){
 		std::cout << BLUE << "ScavTrap " << this->name << " attacks "  << target << ", causing " << this->attackDamage << " points of damage!" << RESET << std::endl;
