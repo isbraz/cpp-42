@@ -19,6 +19,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& copyAssignment){
 	this->hitPoints = copyAssignment.hitPoints;
 	this->energyPoints = copyAssignment.energyPoints;
 	this->attackDamage = copyAssignment.attackDamage;	
+	return (*this);
 }
 
 ClapTrap::ClapTrap(std::string name){

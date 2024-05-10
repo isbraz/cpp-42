@@ -20,6 +20,7 @@ FragTrap&  FragTrap::operator=(const FragTrap& copyAssignment){
 	this->hitPoints = copyAssignment.hitPoints;
 	this->energyPoints = copyAssignment.energyPoints;
 	this->attackDamage = copyAssignment.attackDamage;
+	return (*this);
 }
 
 FragTrap::FragTrap(std::string name){

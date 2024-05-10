@@ -27,6 +27,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& copyAssignment){
 	this->hitPoints = copyAssignment.hitPoints;
 	this->energyPoints = copyAssignment.energyPoints;
 	this->attackDamage = copyAssignment.attackDamage;
+	return (*this);
 }
 
 void ScavTrap::attack(const std::string& target){
