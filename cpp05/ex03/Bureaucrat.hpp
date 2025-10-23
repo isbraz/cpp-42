@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <exception>
-#include "Form.hpp"
+#include "AForm.hpp"
 
 #define RED "\033[41m"
 #define GREEN "\033[42m"
@@ -11,7 +11,7 @@
 #define WHITE "\033[47m"
 #define RESET "\033[0m"
 
-class Form;
+class AForm;
 
 class Bureaucrat{
 	private:
@@ -34,7 +34,9 @@ class Bureaucrat{
 		int  getGrade() const;
 		void increment();
 		void decrement();
-		void signForm(Form &test);
+		void signForm(AForm &test);
+		void executeForm(const AForm &form) const;
+
 };
 
 std::ostream& operator<<(std::ostream &os, const Bureaucrat &b);

@@ -22,7 +22,7 @@ class Form{
 		Form(const Form& copyConstructor);
 		Form& operator=(const Form& copyAssignment);
 		~Form();
-		void beSigned(Bureaucrat &teste);
+		void beSigned(Bureaucrat &b);
 		bool getSign() const;
 		const std::string getName() const;
 		int getRequired() const;

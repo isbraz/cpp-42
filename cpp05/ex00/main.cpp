@@ -1,6 +1,8 @@
 #include "Bureaucrat.hpp"
 
 int main(){
+
+	// Test 1: Basic functionality test
 	try
 	{
 		std::cout << WHITE << "...TESTING..." << RESET << std::endl;
@@ -20,6 +22,8 @@ int main(){
 		std::cerr << e.what() << std::endl;
 		std::cerr << "❌❌❌❌❌❌❌❌❌❌❌❌❌" << std::endl;
 	}
+	
+	// Test 2: Creating a Bureaucrat with too high a grade
 	try
 	{
 		std::cout << WHITE << "...TESTING..." << RESET << std::endl;
@@ -35,4 +39,22 @@ int main(){
 		std::cerr << e.what() << std::endl;
 		std::cout << "❌❌❌❌❌❌❌❌❌❌❌❌❌" << std::endl;
 	}
+	
+	// Test 3: Creating a Bureaucrat with too low a grade
+	try
+	{
+		std::cout << WHITE << "...TESTING..." << RESET << std::endl;
+		std::cout << "❌❌❌❌❌❌❌❌❌❌❌❌❌" << std::endl;
+		Bureaucrat c("Junior", 150);
+		std::cout << c << std::endl;
+		std::cout << RED << "...Decrementing..." << RESET << std::endl;
+		c.decrement();
+		std::cout << c << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+		std::cout << "❌❌❌❌❌❌❌❌❌❌❌❌❌" << std::endl;
+	}
+	
 }
