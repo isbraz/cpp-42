@@ -13,14 +13,12 @@ NAME = Bureaucrat
 all: $(NAME)
 
 $(NAME): $(SRCS)
-	@$(CXX) $(SRCS) -o $(NAME) $(CXXFLAGS)
-	@echo "\n$(GREEN)> Compilation done!\n$(END)"
+	$(CXX) $(SRCS) -o $(NAME) $(CXXFLAGS)
 
 clean:
-	@echo "\n$(RED)> Segmentation Fault!\n$(END)"
 
 fclean: clean
-	@$(RM) $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 

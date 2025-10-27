@@ -12,7 +12,7 @@ int main(){
 		std::cout << GREEN << "...Incrementing..." << RESET << std::endl;
 		a.increment();
 		std::cout << a << std::endl;
-		std::cout << RED << "...Decrementing..." << RESET << std::endl;
+		std::cout << RED << "...Decrementsing..." << RESET << std::endl;
 		a.decrement();
 		std::cout << a << std::endl;
 		std::cout << "✅✅✅✅✅✅✅✅✅✅✅✅✅" << std::endl;

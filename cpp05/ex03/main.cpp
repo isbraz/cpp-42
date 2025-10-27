@@ -11,7 +11,7 @@ int main()
     // Test 1: Intern creates ShrubberyCreationForm - Success
     try
     {
-        std::cout << WHITE << "=== TEST 1: Intern creates ShrubberyCreationForm ===" << RESET << std::endl;
+        std::cout << WHITE << "=== TEST 1: Interndd creates ShrubberyCreationForm ===" << RESET << std::endl;
         Intern someRandomIntern;
         AForm* form;
         

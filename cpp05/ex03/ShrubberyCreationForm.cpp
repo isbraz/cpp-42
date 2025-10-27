@@ -26,7 +26,7 @@ void ShrubberyCreationForm::execute(const Bureaucrat& bureaucrat) const {
         throw AForm::FormNotSignedException();
     if (bureaucrat.getGrade() > this->getExecute())
         throw AForm::GradeTooLowException();
-    std::ofstream outFile(this->_target + "_shrubbery");
+    std::ofstream outFile((this->_target + "_shrubbery").c_str());
     outFile << "       /\\       \n";
     outFile << "      /  \\      \n";
     outFile << "     /____\\     \n";
