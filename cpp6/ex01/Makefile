@@ -4,11 +4,11 @@ END := \033[0m
 
 CXX = c++
 
-SRCS = main.cpp ScalarConverter.cpp
+SRCS = main.cpp Serializer.cpp
 
 CXXFLAGS = -std=c++98 -g -Wall -Wextra -Werror
 
-NAME = converter
+NAME = serialize
 
 all: $(NAME)
 
@@ -16,9 +16,9 @@ $(NAME): $(SRCS)
 	$(CXX) $(SRCS) -o $(NAME) $(CXXFLAGS)
 
 clean:
-	@echo "$(RED)Nothing to clean (no object files)$(END)"
+	$(RM) $(NAME)
 
-fclean: clean
+fclean:
 	$(RM) $(NAME)
 
 re: fclean all
