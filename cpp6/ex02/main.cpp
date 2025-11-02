@@ -1,4 +1,6 @@
 #include "BaseChecker.hpp"
+#include <cstdlib>
+#include <ctime>
 
 int main() {
 
