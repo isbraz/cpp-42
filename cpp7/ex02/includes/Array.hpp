@@ -20,7 +20,7 @@ private:
     T* elements;
     size_t arraySize;
 public:
-    Array() : elements(nullptr), arraySize(0) {}
+    Array() : elements(NULL), arraySize(0) {}
     Array(unsigned int n) : elements(new T[n]()), arraySize(n) {}
     Array(const Array& other) : elements(new T[other.arraySize]), arraySize(other.arraySize) {
         for (size_t i = 0; i < arraySize; ++i) {
