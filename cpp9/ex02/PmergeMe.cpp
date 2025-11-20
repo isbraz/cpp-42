@@ -44,7 +44,10 @@ void PmergeMe::parseInput(int argc, char **argv) {
         std::string arg(argv[i]);
         validateNumber(arg);
         
-        int num = atoi(arg.c_str());
+        std::stringstream ss(arg);
+        int num;
+        ss >> num;
+        
         _vec.push_back(num);
         _deq.push_back(num);
     }
